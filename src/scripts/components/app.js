@@ -1,7 +1,8 @@
 'use strict';
 
 var React = require('react/addons');
-var ReactTransitionGroup = React.addons.TransitionGroup;
+
+var Reacticons = require('../../../icons');
 
 // Export React so the devtools can find it
 (window !== window.top ? window.top : window).React = React;
@@ -15,7 +16,7 @@ var App = React.createClass({
   render: function() {
     return (
       <div className="main">
-        It works
+        <Reacticons.SwitchOn width={100} />
       </div>
     );
   }

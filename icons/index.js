@@ -1,3 +1,3 @@
 "use strict";
 
-// exports.Form = require('./jsx/forms/form');
+exports.SwitchOn = require('./components/switch_on');
