@@ -2,7 +2,7 @@
 
 var React = require('react/addons');
 
-var Reacticons = require('../../../icons');
+var Icon = require('../../../icons');
 
 // Export React so the devtools can find it
 (window !== window.top ? window.top : window).React = React;
@@ -16,7 +16,11 @@ var App = React.createClass({
   render: function() {
     return (
       <div className="main">
-        <Reacticons.SwitchOn width={100} />
+        <Icon.SwitchOn size={100}/>
+        <Icon.Tag />
+        <Icon.Tag2 />
+        <Icon.Tag3 />
+        <Icon.Tag4 />
       </div>
     );
   }
