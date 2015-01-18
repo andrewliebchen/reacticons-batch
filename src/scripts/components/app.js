@@ -16,11 +16,14 @@ var App = React.createClass({
   render: function() {
     return (
       <div className="main">
-        <Icon.SwitchOn size={100}/>
+        <Icon.SwitchOn size={100} className="icon"/>
         <Icon.Tag />
         <Icon.Tag2 />
         <Icon.Tag3 />
         <Icon.Tag4 />
+        <Icon.Terminal />
+        <Icon.Terminal2 />
+        <Icon.Terminal3 />
       </div>
     );
   }
