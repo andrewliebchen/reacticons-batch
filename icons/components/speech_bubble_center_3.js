@@ -3,7 +3,7 @@
 var React = require('react/addons');
 var IconMixin = require('../icon_mixin');
 
-var SwitchOn = React.createClass({
+module.exports = React.createClass({
   mixins: [IconMixin],
 
   renderGraphic: function() {
@@ -11,4 +11,3 @@ var SwitchOn = React.createClass({
   }
 });
 
-module.exports = SwitchOn;

@@ -3,12 +3,10 @@
 var React = require('react/addons');
 var IconMixin = require('../icon_mixin');
 
-var SwitchOn = React.createClass({
+module.exports = React.createClass({
   mixins: [IconMixin],
 
   renderGraphic: function() {
     return <path d="M 24.00,48.00c-13.254,0.00-24.00-10.746-24.00-24.00s 10.746-24.00, 24.00-24.00c 13.254,0.00, 24.00,10.746, 24.00,24.00 S 37.254,48.00, 24.00,48.00z M 24.00,42.00c 5.31,0.00, 10.035-2.343, 13.329-6.00L10.671,36.00 C 13.965,39.657, 18.69,42.00, 24.00,42.00z M 24.00,6.00C 14.061,6.00, 6.00,14.061, 6.00,24.00 c0.00,2.115, 0.432,4.116, 1.101,6.00l33.798,0.00 C 41.565,28.116, 42.00,26.115, 42.00,24.00C 42.00,14.061, 33.939,6.00, 24.00,6.00z" />;
   }
 });
-
-module.exports = SwitchOn;
