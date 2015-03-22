@@ -22,7 +22,7 @@ module.exports = {
         height={this.props.size + 'px'}
         className={this.props.className}
         viewBox="0 0 48 48">
-        {this.renderGraphic()}
+        {this.renderGraphic(this.props.type)}
       </svg>
     );
   }

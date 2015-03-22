@@ -17,305 +17,279 @@ var App = React.createClass({
     return (
       <div className="main">
         <Icon.Add />
-        <Icon.AddressBook />
-        <Icon.AddressBook2 />
-        <Icon.AlignBottom />
-        <Icon.AlignHorizontalCenters />
-        <Icon.AlignLeftEdges />
-        <Icon.AlignRightActions />
-        <Icon.AlignTop />
-        <Icon.AlignVerticalCenters />
+        <Icon.AddressBook/>
+        <Icon.AddressBook type="alt"/>
+        <Icon.Align type="bottom" />
+        <Icon.Align type="horizontalCenters" />
+        <Icon.Align type="leftEdges" />
+        <Icon.Align type="rightEdges" />
+        <Icon.Align type="top" />
+        <Icon.Align type="verticalCenters" />
         <Icon.Anchor />
-        <Icon.ArrowDown />
-        <Icon.ArrowLeft />
-        <Icon.ArrowRight />
-        <Icon.ArrowUp />
+        <Icon.Arrow type="up"/>
+        <Icon.Arrow type="down"/>
+        <Icon.Arrow type="left"/>
+        <Icon.Arrow type="right"/>
         <Icon.Asterisk />
         <Icon.Attachment />
-        <Icon.Attachment2 />
-        <Icon.AudioHigh />
-        <Icon.AudioMid />
-        <Icon.AudioMute />
-        <Icon.AudoLow />
-        <Icon.Batter1002 />
-        <Icon.Batter20 />
-        <Icon.Batter60 />
-        <Icon.Batter602 />
-        <Icon.Battery100 />
-        <Icon.Battery202 />
-        <Icon.Battery40 />
-        <Icon.Battery402 />
-        <Icon.Battery80 />
-        <Icon.Battery802 />
-        <Icon.BatteryCharge />
-        <Icon.BatteryCharge2 />
-        <Icon.BatteryEmpty />
-        <Icon.BatteryEmpty2 />
+        <Icon.Attachment type="alt"/>
+        <Icon.Audio type="high"/>
+        <Icon.Audio type="mid"/>
+        <Icon.Audio type="low"/>
+        <Icon.Audio type="mute"/>
+        <Icon.BatteryRound type="100"/>
+        <Icon.BatteryRound type="80"/>
+        <Icon.BatteryRound type="60"/>
+        <Icon.BatteryRound type="40"/>
+        <Icon.BatteryRound type="20"/>
+        <Icon.BatteryRound type="charge"/>
+        <Icon.BatteryRound type="empty"/>
+        <Icon.BatterySquare type="100"/>
+        <Icon.BatterySquare type="80"/>
+        <Icon.BatterySquare type="60"/>
+        <Icon.BatterySquare type="40"/>
+        <Icon.BatterySquare type="20"/>
+        <Icon.BatterySquare type="charge"/>
+        <Icon.BatterySquare type="empty"/>
         <Icon.Bell />
-        <Icon.Bell2 />
-        <Icon.BellMute />
-        <Icon.BellMute2 />
+        <Icon.Bell type="mute"/>
         <Icon.Bin />
-        <Icon.Bin2 />
+        <Icon.Bin type="alt"/>
         <Icon.Book />
-        <Icon.Book2 />
+        <Icon.Book type="alt"/>
         <Icon.BookLines />
-        <Icon.BookLines2 />
-        <Icon.BrightnessHigh />
-        <Icon.BrightnessLow />
+        <Icon.BookLines type="alt" />
+        <Icon.Brightness type="high"/>
+        <Icon.Brightness type="low"/>
         <Icon.Browser />
-        <Icon.Browser2 />
-        <Icon.BrowserClose />
-        <Icon.BrowserClose2 />
-        <Icon.BrowserDownload />
-        <Icon.BrowserDownload2 />
-        <Icon.BrowserMinimize />
-        <Icon.BrowserMinimize2 />
-        <Icon.BrowserNewWindow />
-        <Icon.BrowserNewWindow2 />
-        <Icon.BrowserUpload />
-        <Icon.BrowserUpload2 />
-        <Icon.BrowserWindows />
-        <Icon.BrowserWindows2 />
+        <Icon.Browser type="close"/>
+        <Icon.Browser type="download"/>
+        <Icon.Browser type="minimize"/>
+        <Icon.Browser type="new"/>
+        <Icon.Browser type="upload"/>
+        <Icon.Browser type="windows"/>
         <Icon.Bulb />
-        <Icon.Bulb2 />
+        <Icon.Bulb alt="alt"/>
         <Icon.Bullet />
         <Icon.Bullhorn />
-        <Icon.Bullhorn2 />
+        <Icon.Bullhorn alt="alt"/>
         <Icon.Calendar />
         <Icon.Camera />
-        <Icon.Camera2 />
-        <Icon.Camera3 />
+        <Icon.Camera type="simple"/>
+        <Icon.Camera type="complex"/>
         <Icon.Cassette />
         <Icon.Clipboard />
-        <Icon.Clipboard2 />
+        <Icon.Clipboard type="alt"/>
         <Icon.Clock />
         <Icon.Cloud />
-        <Icon.CloudAdd />
-        <Icon.CloudAdd2 />
-        <Icon.CloudDownload />
-        <Icon.CloudRemove />
-        <Icon.CloudRemove2 />
-        <Icon.CloudUpload />
+        <Icon.Cloud type="add"/>
+        <Icon.Cloud type="add2"/>
+        <Icon.Cloud type="download"/>
+        <Icon.Cloud type="remove"/>
+        <Icon.Cloud type="remove2"/>
+        <Icon.Cloud type="upload"/>
         <Icon.Cmd />
         <Icon.Code />
         <Icon.Compass />
         <Icon.Compose />
-        <Icon.Compose2 />
-        <Icon.Compose3 />
-        <Icon.Compose4 />
+        <Icon.Compose type="pencil"/>
+        <Icon.Compose type="feather"/>
+        <Icon.Compose type="feather2"/>
         <Icon.Contract />
-        <Icon.Contract2 />
-        <Icon.Contract3 />
+        <Icon.Contract type="outline"/>
         <Icon.Contrast />
         <Icon.Converge />
         <Icon.Crate />
         <Icon.CreditCard />
-        <Icon.CreditCard2 />
-        <Icon.CreditCard3 />
-        <Icon.CreditCard4 />
+        <Icon.CreditCard type="dark"/>
+        <Icon.CreditCard type="light2"/>
+        <Icon.CreditCard type="dark2"/>
         <Icon.Crop />
         <Icon.CurlyBrace />
-        <Icon.CurlyBrace2 />
+        <Icon.CurlyBrace type="alt"/>
         <Icon.Database />
-        <Icon.DatabaseAdd />
-        <Icon.DatabaseRemove />
+        <Icon.Database type="add"/>
+        <Icon.Database type="remove"/>
         <Icon.Delete />
-        <Icon.DistributeBottomEdges />
-        <Icon.DistributeHorizontalCenters />
-        <Icon.DistributeLeftEdges />
-        <Icon.DistributeRightEdges />
-        <Icon.DistributeTopEdges />
-        <Icon.DistributeVerticalCenters />
+        <Icon.Distribute type="bottomEdges"/>
+        <Icon.Distribute type="horizontalCenters"/>
+        <Icon.Distribute type="leftEdges"/>
+        <Icon.Distribute type="rightEdges"/>
+        <Icon.Distribute type="topEdges"/>
+        <Icon.Distribute type="verticalCenters"/>
         <Icon.Document />
-        <Icon.DocumentAdd />
-        <Icon.DocumentRemove />
+        <Icon.Document type="add"/>
+        <Icon.Document type="remove"/>
         <Icon.Droplet />
         <Icon.Ellipsis />
         <Icon.Exclude />
         <Icon.Expand />
-        <Icon.Expand2 />
-        <Icon.Expand3 />
+        <Icon.Expand type="outline"/>
         <Icon.Eye />
-        <Icon.Eye2 />
-        <Icon.FlaskEmpty />
-        <Icon.FlaskFull />
+        <Icon.Eye type="alt"/>
+        <Icon.Flask />
+        <Icon.Flask type="full"/>
         <Icon.Floppy />
         <Icon.Flux />
         <Icon.Folder />
-        <Icon.Folder2 />
-        <Icon.FolderAdd />
-        <Icon.FolderAdd2 />
-        <Icon.FolderDuplicate />
-        <Icon.FolderDuplicate2 />
-        <Icon.FolderRemove />
-        <Icon.FolderRemove2 />
+        <Icon.Folder type="add"/>
+        <Icon.Folder type="duplicate"/>
+        <Icon.Folder type="remove"/>
         <Icon.Grid />
-        <Icon.Grid2 />
+        <Icon.Grid type="alt"/>
         <Icon.Headphones />
-        <Icon.HeartEmpty />
-        <Icon.HeartFull />
-        <Icon.HeartHalf />
+        <Icon.Heart />
+        <Icon.Heart type="full"/>
+        <Icon.Heart type="half"/>
         <Icon.Image />
         <Icon.In />
         <Icon.Inbox />
-        <Icon.Inbox2 />
+        <Icon.Inbox type="alt"/>
         <Icon.Inifinity />
         <Icon.Intersect />
         <Icon.Key />
-        <Icon.Key2 />
+        <Icon.Key type="alt"/>
         <Icon.Keys />
-        <Icon.LayoutColumnCenter />
-        <Icon.LayoutContentLeft />
-        <Icon.LayoutContentLeft2 />
-        <Icon.LayoutContentRight />
-        <Icon.LayoutContentRight2 />
-        <Icon.LayoutSidebarLeft />
-        <Icon.LayoutSidebarRight />
+        <Icon.Layout type="columnCenter"/>
+        <Icon.Layout type="contentLeft"/>
+        <Icon.Layout type="contentRight"/>
+        <Icon.Layout type="sidebarLeft"/>
+        <Icon.Layout type="sidebarRight"/>
         <Icon.Link />
-        <Icon.Link2 />
+        <Icon.Link type="alt"/>
         <Icon.List />
-        <Icon.List2 />
+        <Icon.List type="alt"/>
         <Icon.Locked />
         <Icon.Mail />
-        <Icon.Mail2 />
-        <Icon.Mail3 />
+        <Icon.Mail type="alt"/>
         <Icon.Map />
-        <Icon.Map2 />
+        <Icon.Map type="alt"/>
         <Icon.Marquee />
-        <Icon.MarqueeDownload />
-        <Icon.MarqueeMinus />
-        <Icon.MarqueePlus />
-        <Icon.MarqueeUpload />
+        <Icon.Marquee type="download"/>
+        <Icon.Marquee type="minus"/>
+        <Icon.Marquee type="plus"/>
+        <Icon.Marquee type="upload"/>
         <Icon.Maximise />
         <Icon.Menu />
-        <Icon.Menu2 />
-        <Icon.MenuPullDown />
-        <Icon.MenuPullUp />
+        <Icon.Menu type="outline"/>
+        <Icon.Menu type="pullDown"/>
+        <Icon.Menu type="pullUp"/>
         <Icon.Microphone />
-        <Icon.Microphone2 />
+        <Icon.Microphone type="alt"/>
         <Icon.Minus />
         <Icon.Mixer />
         <Icon.Newspaper />
-        <Icon.Newspaper2 />
+        <Icon.Newspaper type="alt"/>
         <Icon.Nib />
         <Icon.Nope />
         <Icon.Notes />
         <Icon.Out />
         <Icon.Outbox />
-        <Icon.Outbox2 />
+        <Icon.Outbox type="alt"/>
         <Icon.Outgoing />
         <Icon.PaperRipped />
         <Icon.PaperRoll />
-        <Icon.PaperRollRipped />
-        <Icon.ParagraphCenter />
-        <Icon.ParagraphCenter2 />
-        <Icon.ParagraphJustify />
-        <Icon.ParagraphJustify2 />
-        <Icon.ParagraphLeft />
-        <Icon.ParagraphLeft2 />
-        <Icon.ParagraphRight />
-        <Icon.ParagraphRight2 />
+        <Icon.PaperRoll type="ripped"/>
+        <Icon.Paragraph type="center"/>
+        <Icon.Paragraph type="centerOutline"/>
+        <Icon.Paragraph type="justify"/>
+        <Icon.Paragraph type="justifyOutline"/>
+        <Icon.Paragraph type="left"/>
+        <Icon.Paragraph type="leftOutline"/>
+        <Icon.Paragraph type="right"/>
+        <Icon.Paragraph type="rightOutline"/>
         <Icon.Pen />
         <Icon.Pencil />
         <Icon.Pin />
-        <Icon.Pin2 />
+        <Icon.Pin type="alt"/>
         <Icon.Plus />
         <Icon.Podcast />
-        <Icon.Podcast2 />
+        <Icon.Podcast type="alt"/>
         <Icon.Polaroid />
-        <Icon.Polaroid2 />
+        <Icon.Polaroid type="alt"/>
         <Icon.Power />
         <Icon.Print />
         <Icon.Quill />
-        <Icon.Quill2 />
+        <Icon.Quill type="alt"/>
         <Icon.Refresh />
         <Icon.Reminder />
         <Icon.Remove />
         <Icon.Repeat />
-        <Icon.Repeat2 />
+        <Icon.Repeat type="alt"/>
         <Icon.Return />
         <Icon.Rulers />
         <Icon.Safe />
         <Icon.Search />
-        <Icon.Search2 />
+        <Icon.Search type="alt"/>
         <Icon.Section />
         <Icon.Settings />
-        <Icon.Settings2 />
-        <Icon.Settings3 />
+        <Icon.Settings type="alt"/>
+        <Icon.Settings type="gears"/>
         <Icon.Shred />
         <Icon.Shuffle />
         <Icon.Sleep />
-        <Icon.SpeechBubbleCenter />
-        <Icon.SpeechBubbleCenter2 />
-        <Icon.SpeechBubbleCenter3 />
-        <Icon.SpeechBubbleLef3 />
-        <Icon.SpeechBubbleLeft />
-        <Icon.SpeechBubbleLeft2 />
-        <Icon.SpeechBubbleLeft4 />
-        <Icon.SpeechBubbleRight />
-        <Icon.SpeechBubbleRight2 />
-        <Icon.SpeechBubbleRight3 />
-        <Icon.SpeechBubbleRight4 />
-        <Icon.Spiiner3 />
+        <Icon.SpeechBubble type="center"/>
+        <Icon.SpeechBubble type="centerFill"/>
+        <Icon.SpeechBubble type="left"/>
+        <Icon.SpeechBubble type="leftFill"/>
+        <Icon.SpeechBubble type="right"/>
+        <Icon.SpeechBubble type="rightFill"/>
         <Icon.Spinner />
-        <Icon.Spinner2 />
+        <Icon.Spinner type="thin"/>
+        <Icon.Spinner type="thick"/>
         <Icon.Split />
-        <Icon.Split2 />
+        <Icon.Split type="alt"/>
         <Icon.Spool />
         <Icon.SquareBrackets />
         <Icon.Stamp />
-        <Icon.Stamp2 />
+        <Icon.Stamp type="alt"/>
         <Icon.Stiffy />
         <Icon.Store />
-        <Icon.Store2 />
+        <Icon.Store type="alt"/>
         <Icon.Subtract />
         <Icon.Support />
-        <Icon.Support2 />
-        <Icon.Support3 />
+        <Icon.Support type="alt"/>
         <Icon.Swap />
-        <Icon.Swap2 />
+        <Icon.Swap type="alt"/>
         <Icon.Swatch />
         <Icon.Swatches />
-        <Icon.SwitchOff />
-        <Icon.SwitchOn />
+        <Icon.Switch type="on"/>
+        <Icon.Switch type="off"/>
         <Icon.Tag />
-        <Icon.Tag2 />
-        <Icon.Tag3 />
-        <Icon.Tag4 />
+        <Icon.Tag type="horizontal"/>
+        <Icon.Tag type="stringOutline"/>
+        <Icon.Tag type="stringFill"/>
         <Icon.Terminal />
-        <Icon.Terminal2 />
-        <Icon.Terminal3 />
+        <Icon.Terminal type="header"/>
+        <Icon.Terminal type="browser"/>
         <Icon.Tilde />
         <Icon.Timeline />
-        <Icon.ToggleOff />
-        <Icon.ToggleOn />
+        <Icon.Toggle type="off"/>
+        <Icon.Toggle type="on"/>
         <Icon.Transfer />
         <Icon.Tray />
         <Icon.Unite />
         <Icon.Unlocked />
         <Icon.User />
-        <Icon.User2 />
-        <Icon.User3 />
+        <Icon.User type="outline"/>
+        <Icon.User type="circle"/>
         <Icon.UserCard />
         <Icon.Users />
         <Icon.Video />
-        <Icon.Video2 />
+        <Icon.Video type="alt"/>
         <Icon.Vinyl />
         <Icon.Voicemail />
         <Icon.Wallet />
-        <Icon.Wallet2 />
+        <Icon.Wallet type="alt"/>
         <Icon.Wave />
-        <Icon.Wave2 />
-        <Icon.WifiHigh/>
-        <Icon.WifiLow />
-        <Icon.WifiMid />
+        <Icon.Wave type="alt"/>
+        <Icon.Wifi/>
+        <Icon.Wifi type="mid"/>
+        <Icon.Wifi type="low"/>
         <Icon.Wiggle />
         <Icon.Windows />
-        <Icon.ZoomIn />
-        <Icon.ZoomIn2 />
-        <Icon.ZoomOut />
-        <Icon.ZoomOut2 />
+        <Icon.Zoom type="in"/>
+        <Icon.Zoom type="out"/>
       </div>
     );
   }
