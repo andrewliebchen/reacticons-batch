@@ -76,22 +76,8 @@ module.exports = function (grunt) {
 
     copy: {
       dist: {
-        files: [
-          // includes files within path
-          {
-            flatten: true,
-            expand: true,
-            src: ['<%= pkg.src %>/*'],
-            dest: '<%= pkg.dist %>/',
-            filter: 'isFile'
-          },
-          {
-            flatten: true,
-            expand: true,
-            src: ['<%= pkg.src %>/images/*'],
-            dest: '<%= pkg.dist %>/images/'
-          },
-        ]
+        src: ['src/index.html'],
+        dest: './index.html'
       }
     },
 
@@ -100,6 +86,7 @@ module.exports = function (grunt) {
         files: [{
           dot: true,
           src: [
+            'index.html',
             '<%= pkg.dist %>'
           ]
         }]
