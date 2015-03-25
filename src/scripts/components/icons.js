@@ -61,10 +61,10 @@ var Icons = React.createClass({
         <Icon.Browser type="upload"/>
         <Icon.Browser type="windows"/>
         <Icon.Bulb />
-        <Icon.Bulb alt="alt"/>
+        <Icon.Bulb type="alt"/>
         <Icon.Bullet />
         <Icon.Bullhorn />
-        <Icon.Bullhorn alt="alt"/>
+        <Icon.Bullhorn type="alt"/>
         <Icon.Calendar />
         <Icon.Camera />
         <Icon.Camera type="simple"/>

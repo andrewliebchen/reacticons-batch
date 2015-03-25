@@ -1,7 +1,7 @@
 @import "normalize";
 
 // VARIABLES
-$color-primary:    #0AECC2;
+$color-primary:    #FFCC00;
 $color-secondary:  #FF4040;
 
 $color-gray-dark:  #556270;
@@ -54,13 +54,24 @@ pre {
   padding: 0;
 }
 
+p {
+  padding-bottom: 1.5em;
+}
+
 a {
-  color: $color-primary;
+  color: $color-secondary;
   font-weight: bold;
   text-decoration: none;
 
   &:hover {
     text-decoration: underline;
+  }
+}
+
+code {
+  span {
+    display: block;
+    line-height: 1.5em;
   }
 }
 
@@ -81,16 +92,20 @@ label {
 button,
 .button {
   appearance: none;
+  background-color: $color-secondary;
   background-color: transparent;
   background-image: none;
   border-radius: $radius;
   border: 0;
+  color: white;
   display: inline-block;
   font-weight: bold;
-  padding: 0 1em;
+  line-height: 3em;
+  padding: 0 2em;
   text-align: center;
 
   &:hover {
+    background-color: darken($color-secondary, 5%);
     text-decoration: none;
   }
 
@@ -131,19 +146,12 @@ select {
   color: white;
   overflow: hidden;
   position: relative;
-
-  button {
-    background-color: $color-secondary;
-    color: white;
-    padding: 1em 2em;
-  }
 }
 
 .header__title {
   text-align: center;
   z-index: 1;
   position: relative;
-
 
   h1 {
     font-size: 6em;
@@ -181,114 +189,69 @@ select {
 }
 
 .example {
-  @include clearfix;
-  background-color: $color-gray-dark;
+  background-color: white;
   border-radius: $radius;
   overflow: hidden;
   position: relative;
-}
-
-.example__result {
-  border-radius: $radius 0 0 $radius;
-  border-right: 1px solid $color-gray-dark;
-  bottom: 0;
-  color: $color-gray-light;
-  left: 0;
-  overflow: hidden;
-  position: absolute;
-  top: 0;
-  width: 50%;
-  padding: 3em;
 
   .reacticon {
-    left: 50%;
-    position: absolute;
-    top: 50%;
-    transform: translate3d(-50%, -50%, 0);
-  }
-
-  code {
-    line-height: 1.5;
-  }
-}
-
-.example__code__toggle {
-  $width: 10em;
-  border: 1px solid;
-  bottom: 1.25em;
-  color: $color-gray-mid;
-  font-size: 0.75em;
-  left: 50%;
-  line-height: 2em;
-  margin-left: -($width / 2);
-  position: absolute;
-  width: $width;
-  z-index: 1;
-
-  &:hover {
-    background-color: $color-gray-mid;
-    border-color: $color-gray-mid;
-    color: $color-gray-dark;
-  }
-}
-
-.toggle {
-  $toggleSize: 1em;
-  margin-top: 0.25em;
-
-  .toggle__wrapper {
-    background-color: $color-gray-dark;
-    border-radius: $toggleSize;
-    border: 2px solid $color-gray-dark;
-    box-sizing: content-box;
-    cursor: pointer;
-    float: left;
-    height: $toggleSize;
-    margin-right: 0.5em;
+    background-color: white;
+    border-radius: $radius;
+    fill: $color-gray-mid;
+    padding: 0.5em;
     position: relative;
-    width: $toggleSize * 2;
+    transition: all 0.1s cubic-bezier(0.175,  0.885, 0.320, 1.275);
 
     &:hover {
-      box-shadow: 0 0 0 2px $color-positive;
-    }
-  }
-
-  .toggle__handle {
-    background-color: white;
-    border-radius: $toggleSize;
-    height: $toggleSize;
-    left: 0;
-    position: absolute;
-    top: 0;
-    transition: all 0.1s ease-out;
-    width: $toggleSize;
-  }
-
-  .toggle__label {
-    position: relative;
-    top: -2px;
-    font-size: 0.75em;
-    font-weight: bold;
-  }
-
-  &.is-on {
-    .toggle__wrapper {
-      background-color: $color-positive;
-      border-color: $color-positive;
-    }
-
-    .toggle__handle {
-      left: $toggleSize;
+      box-shadow: 0 3px 10px rgba(black, 0.2);
+      fill: $color-gray-dark;
+      transform: scale(1.75);
+      z-index: 1;
     }
   }
 }
 
-.example__configure {
-  background-color: white;
-  color: $color-gray-dark;
-  float: right;
-  padding: 0.5em 0;
+.example__tab {
+  background-color: $color-gray-mid;
+  color: $color-gray-light;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 3em;
+  text-align: center;
   width: 50%;
+
+  &:hover {
+    color: white;
+    text-decoration: none;
+  }
+
+  &.is-selected {
+    background-color: transparent;
+    color: $color-gray-mid;
+  }
+}
+
+.example__pane {
+  padding: 2em;
+
+  &.icons {
+    text-align: center;
+  }
+}
+
+.example__link {
+  background-color: $color-primary;
+  color: $color-secondary;
+  cursor: pointer;
+  display: block;
+  line-height: 3em;
+  text-align: center;
+
+  &:hover {
+    background-color: $color-secondary;
+    color: white;
+    text-decoration: none;
+  }
 }
 
 .instructions {
@@ -302,14 +265,7 @@ select {
 }
 
 .instructions__cta {
-  background-color: $color-primary;
-  color: white;
-  line-height: 3em;
   width: 100%;
-
-  &:hover {
-    background-color: darken($color-primary, 5%);
-  }
 }
 
 .instructions__or {
