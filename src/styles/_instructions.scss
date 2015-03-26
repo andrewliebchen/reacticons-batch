@@ -1,0 +1,30 @@
+.instructions {
+  @extend %section;
+  background-color: white;
+  color: $color-gray-dark;
+
+  .width-wrapper {
+    max-width: $width-wrapper / 1.5;
+  }
+}
+
+.instructions__cta {
+  width: 100%;
+}
+
+.instructions__or {
+  display: block;
+  padding: 1em 0;
+  text-align: center;
+}
+
+.instructions__code {
+  background-color: $color-gray-light;
+  border-radius: $radius;
+  color: $color-gray-mid;
+  display: block;
+  line-height: 3em;
+  margin-bottom: 3em;
+  padding: 0 0.5em;
+  text-align: center;
+}

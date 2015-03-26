@@ -1,0 +1,76 @@
+.ui-section {
+  @extend %section;
+  background-color: $color-gray-light;
+}
+
+.files-section {
+  @extend %section;
+  background-color: $color-gray-mid;
+  color: $color-gray-light;
+}
+
+.example {
+  background-color: white;
+  border-radius: $radius;
+  overflow: hidden;
+  position: relative;
+
+  .reacticon {
+    background-color: white;
+    border-radius: $radius;
+    fill: $color-gray-mid;
+    padding: 0.5em;
+    position: relative;
+    transition: all 0.1s cubic-bezier(0.175,  0.885, 0.320, 1.275);
+
+    &:hover {
+      box-shadow: 0 3px 10px rgba(black, 0.2);
+      fill: $color-gray-dark;
+      transform: scale(1.75);
+      z-index: 1;
+    }
+  }
+}
+
+.example__tab {
+  background-color: $color-gray-mid;
+  color: $color-gray-light;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 3em;
+  text-align: center;
+  width: 50%;
+
+  &:hover {
+    color: white;
+    text-decoration: none;
+  }
+
+  &.is-selected {
+    background-color: transparent;
+    color: $color-gray-mid;
+  }
+}
+
+.example__pane {
+  padding: 2em;
+
+  &.icons {
+    text-align: center;
+  }
+}
+
+.example__link {
+  background-color: $color-gray-mid;
+  color: $color-gray-light;
+  cursor: pointer;
+  display: block;
+  line-height: 3em;
+  text-align: center;
+
+  &:hover {
+    background-color: $color-secondary;
+    color: white;
+    text-decoration: none;
+  }
+}

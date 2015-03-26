@@ -1,0 +1,15 @@
+.footer {
+  @extend %section;
+  background-color: $color-gray-light;
+  color: $color-gray-mid;
+  text-align: center;
+
+  a {
+    color: $color-gray-mid;
+
+    &:hover {
+      color: $color-primary;
+    }
+  }
+}
+
